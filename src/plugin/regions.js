@@ -142,16 +142,18 @@ class Region {
             const css = {
                 cursor: 'col-resize',
                 position: 'absolute',
-                left: '0px',
                 top: '0px',
                 width: '1%',
-                maxWidth: '4px',
+                minWidth: '4px',
                 height: '100%'
             };
             this.style(handleLeft, css);
+            this.style(handleLeft, {
+                left: '0'
+            });
             this.style(handleRight, css);
             this.style(handleRight, {
-                left: '100%'
+                right: '0'
             });
         }
 
