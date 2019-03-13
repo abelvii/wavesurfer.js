@@ -143,8 +143,7 @@ class Region {
                 cursor: 'col-resize',
                 position: 'absolute',
                 top: '0px',
-                width: '1%',
-                minWidth: '4px',
+                width: '10px',
                 height: '100%'
             };
             this.style(handleLeft, css);
